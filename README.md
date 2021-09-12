@@ -18,8 +18,8 @@ mkdocs serve
 Please refer to MkDocs' official [Getting Started](https://www.mkdocs.org/getting-started/) and [User](https://www.mkdocs.org/user-guide/) guides for detailed documentation.
     
 ## Instructions for GitHub Pages hosting
+Please make sure to `git pull` from the `main` branch before executing the following command:
 ```
 mkdocs gh-deploy 
 ```
-This command automatically builds the website and pushes it to the `gh-pages` branch.
-
+This command automatically builds the website, copies the built files to the `gh-pages` branch, and pushes it. This should then be reflected in the [project's documentation site](https://realm-ai-project.github.io/documentation/) after a few minutes. Therefore, please do not directly modify the files from the `gh-pages` branch as any manual changes to it will be overridden whenever the above command is executed.
