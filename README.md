@@ -2,7 +2,8 @@
 
 The documentation website can be accessed [here](https://realm-ai-project.github.io/documentation/). 
 
-This website is built with [MkDocs](https://www.mkdocs.org/) using a [theme](https://github.com/readthedocs/sphinx_rtd_theme) provided by [Read the Docs](https://readthedocs.org/).
+<!-- This website is built with [MkDocs](https://www.mkdocs.org/) using a [theme](https://github.com/readthedocs/sphinx_rtd_theme) provided by [Read the Docs](https://readthedocs.org/). -->
+This website is built using the [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme.
 
 ## Local Setup Guide
 ### Installation
@@ -10,14 +11,17 @@ MkDocs can be installed through pip with the following command:
     
     pip install mkdocs
 
-### Starting the MkDocs server
+### Starting the MkDocs Server
 ```
 mkdocs serve
 ``` 
-## Contributing to REALM_AI documentation
+## Contributing to REALM_AI Documentation
 Please refer to MkDocs' official [Getting Started](https://www.mkdocs.org/getting-started/) and [User](https://www.mkdocs.org/user-guide/) guides for detailed documentation.
+
+### Theme Configurations
+Detailed customization options can be found at Material for MkDocs' [official website](https://squidfunk.github.io/mkdocs-material/).
     
-## Instructions for GitHub Pages hosting
+## Instructions for GitHub Pages Hosting
 Please make sure to `git pull` from the `main` branch before executing the following command:
 ```
 mkdocs gh-deploy 
