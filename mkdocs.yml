@@ -12,8 +12,13 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to light mode
+
+markdown_extensions: 
+  - attr_list 
+
 nav:
   - Introduction: index.md
   - Installation: installation.md
   - 'RL Subsystem': 
     - 'Description': rl_subsystem/description.md
+    - 'Hyperparameter Tuning': rl_subsystem/hyperparameter_tuning.md
