@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#description" class="md-skip">
+        <a href="#overview-of-the-rl-subsystem" class="md-skip">
           Skip to content
         </a>
       
@@ -260,8 +260,6 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           Description
@@ -277,8 +275,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -287,8 +283,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#a-subheader" class="md-nav__link">
-    A subheader
+  <a href="#overview-of-the-rl-subsystem" class="md-nav__link">
+    Overview of the RL Subsystem
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ml-agents-python-package" class="md-nav__link">
+    ML-Agents Python Package
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#training-manager" class="md-nav__link">
+    Training Manager
   </a>
   
 </li>
@@ -297,6 +307,18 @@
   
 </nav>
       
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperparameter_tuning/" class="md-nav__link">
+        Hyperparameter Tuning
+      </a>
     </li>
   
 
@@ -323,8 +345,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -333,8 +353,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#a-subheader" class="md-nav__link">
-    A subheader
+  <a href="#overview-of-the-rl-subsystem" class="md-nav__link">
+    Overview of the RL Subsystem
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ml-agents-python-package" class="md-nav__link">
+    ML-Agents Python Package
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#training-manager" class="md-nav__link">
+    Training Manager
   </a>
   
 </li>
@@ -352,8 +386,17 @@
               
                 
                 
-                <h1 id="description">Description</h1>
-<h2 id="a-subheader">A subheader</h2>
+                  <h1>Description</h1>
+                
+                <p>The main goal of the RL subsystem is to allow users to use reinforcement learning(RL) algorithms to train agents to learn to play the game.</p>
+<p>While the RL Subsystem can be used completely independently of other subsystems, the recommended use of this subsystem is to be used in conjunction with the rest of the subsystems.</p>
+<h2 id="overview-of-the-rl-subsystem">Overview of the RL Subsystem</h2>
+<p><img alt="screenshot" src="../../images/rl_subsystem.png" style="max-width: 25em;" /></p>
+<p>The RL Subsystem is made of two components: the <a href="#TrainingManager">Training Manager</a>, and <a href="https://pypi.org/project/mlagents/" target="_blank">Unity's ML-Agents Python package</a>, which is part of the <a href="https://github.com/Unity-Technologies/ml-agents" target="_blank">ML-Agents Toolkit</a>.</p>
+<h2 id="ml-agents-python-package">ML-Agents Python Package</h2>
+<p>Built by <a href="https://unity.com/" target="_blank">Unity</a>, the ML-Agents Python package contains implementations of several commonly used RL algorithms, and allows agents of these algorithms to interact with the game. </p>
+<h2 id="training-manager">Training Manager</h2>
+<p>Since one of the main goals of this project is to ensure that game developers can use the tool without requiring extensive knowledge in RL, the training manager is meant to further simplify the process of using the underlying ML-Agents Python package. This includes the feature of <a href="../hyperparameter_tuning/">hyperparameter tuning</a>, which allows users to use the RL algorithms without the need to manually select the hyperparameters.</p>
                 
               
               
@@ -387,6 +430,21 @@
           </div>
         </a>
       
+      
+        
+        <a href="../hyperparameter_tuning/" class="md-footer__link md-footer__link--next" aria-label="Next: Hyperparameter Tuning" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Hyperparameter Tuning
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
       
     </nav>
   
