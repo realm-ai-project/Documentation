@@ -22,3 +22,5 @@ nav:
   - 'RL Subsystem': 
     - 'Description': rl_subsystem/description.md
     - 'Hyperparameter Tuning': rl_subsystem/hyperparameter_tuning.md
+  - 'Analysis Subsystem':
+    - 'Description': analysis_subsystem/description.md

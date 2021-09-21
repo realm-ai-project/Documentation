@@ -10,6 +10,7 @@ This website is built using the [Material for MkDocs](https://squidfunk.github.i
 MkDocs can be installed through pip with the following command: 
     
     pip install mkdocs
+    pip install mkdocs-material
 
 ### Starting the MkDocs Server
 ```
