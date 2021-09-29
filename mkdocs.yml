@@ -29,3 +29,4 @@ nav:
     - User Guide: rl_subsystem/user_guide.md
   - Analysis Subsystem:
     - Description: analysis_subsystem/description.md
+    - Heatmaps: analysis_subsystem/heatmaps.md

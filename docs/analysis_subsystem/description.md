@@ -1,0 +1,1 @@
+The main goal of the Analysis subsystem is to automatically create different heatmaps based on the data generated upstream of the pipeline. 
