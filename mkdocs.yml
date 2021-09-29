@@ -30,3 +30,5 @@ nav:
   - Analysis Subsystem:
     - Description: analysis_subsystem/description.md
     - Heatmaps: analysis_subsystem/heatmaps.md
+  - Reporting Subsystem:
+    - Description: reporting_subsystem/description.md
