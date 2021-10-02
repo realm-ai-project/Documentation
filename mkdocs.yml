@@ -23,6 +23,12 @@ markdown_extensions:
 nav:
   - Introduction: index.md
   - Installation: installation.md
+  - Game Plugin Subsystem:
+    - Overview: gameplugin_subsystem/overview.md
+    - Prefab Breakdown: gameplugin_subsystem/prefab_breakdown.md
+    - ML-Agent Components: gameplugin_subsystem/mlagent_components.md
+    - Data Collection Components: gameplugin_subsystem/data_collection.md
+    - Video Recording Components: gameplugin_subsystem/video_recording.md
   - RL Subsystem: 
     - Description: rl_subsystem/description.md
     - Hyperparameter Tuning: rl_subsystem/hyperparameter_tuning.md
