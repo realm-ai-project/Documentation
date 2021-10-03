@@ -3,7 +3,7 @@ The main goal of the RL subsystem is to allow users to use reinforcement learnin
 While the RL Subsystem can be used completely independently of other subsystems, the recommended use of this subsystem is to be used in conjunction with the rest of the subsystems.
 
 ## Overview of the RL Subsystem
-![screenshot](../images/rl_subsystem.png){: style="max-width: 25em;"}
+![screenshot](images/rl_subsystem.png){: style="max-width: 25em;"}
 
 The RL Subsystem is made of two components: the [Training Manager](#training-manager), and [Unity's ML-Agents Python package](https://pypi.org/project/mlagents/){:target="_blank"}, which is part of the [ML-Agents Toolkit](https://github.com/Unity-Technologies/ml-agents){:target="_blank"}.
 
