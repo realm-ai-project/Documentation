@@ -1,6 +1,6 @@
 # Game Plugin Subsystem Overview
 
-The game plugin subsystem is a Unity package. For more information on Unity packages, see [the Unity manual](https://docs.unity3d.com/Manual/PackagesList.html) or [this tutorial](https://www.youtube.com/watch?v=mgsLb3TKljk) for how to create one.
+The game plugin subsystem is a Unity package. For more information on Unity packages, see [the Unity manual](https://docs.unity3d.com/Manual/PackagesList.html){:target="_blank"} or [this tutorial](https://www.youtube.com/watch?v=mgsLb3TKljk){:target="_blank"} for how to create one.
 
 ## Installation Users and Overview
 
