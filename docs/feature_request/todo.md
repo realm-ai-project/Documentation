@@ -15,3 +15,5 @@ Example: <br>
 Example: <br>
 ![screenshot](images/exp_video_slider.png){: style="max-width: 25em;"}<br>
 [Screenshot from Weights & Biases](https://wandb.ai/cleanrl/cleanrl.benchmark/reports/Atari--VmlldzoxMTExNTI)
+
+- For the data storage file format, consider creating an [EBML](https://matroska-org.github.io/libebml/){:target="_blank"} based format, which combines the space-efficiency of pure binary formats and the flexbility/forwards+backwards compatibility of json. The main drawbacks is that it is not easily humanly readable and may be more complex to read and write. Notable existing formats based on EBML are WEBM and MKV.
