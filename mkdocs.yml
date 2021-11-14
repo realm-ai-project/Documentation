@@ -34,5 +34,7 @@ nav:
     - Heatmaps: analysis_subsystem/heatmaps.md
   - Reporting Subsystem:
     - Description: reporting_subsystem/description.md
-  - Python GUI Subsystem:
+  - Python GUI:
     - Description: python_gui/description.md
+    - User Guide: python_gui/user_guide.md
+  - Feature Request: feature_request/todo.md
