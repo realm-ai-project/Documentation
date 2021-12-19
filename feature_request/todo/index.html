@@ -14,7 +14,7 @@
     
     
       
-        <title>Description - REALM_AI</title>
+        <title>Feature Request - REALM_AI</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview-of-the-rl-subsystem" class="md-skip">
+        <a href="#game-subsystem" class="md-skip">
           Skip to content
         </a>
       
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Description
+              Feature Request
             
           </span>
         </div>
@@ -319,14 +319,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       <label class="md-nav__link" for="__nav_4">
         RL Subsystem
@@ -342,61 +340,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Description
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../rl_subsystem/description/" class="md-nav__link">
         Description
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview-of-the-rl-subsystem" class="md-nav__link">
-    Overview of the RL Subsystem
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ml-agents-python-package" class="md-nav__link">
-    ML-Agents Python Package
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#training-manager" class="md-nav__link">
-    Training Manager
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -406,7 +354,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hyperparameter_tuning/" class="md-nav__link">
+      <a href="../../rl_subsystem/hyperparameter_tuning/" class="md-nav__link">
         Hyperparameter Tuning
       </a>
     </li>
@@ -418,7 +366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../user_guide/" class="md-nav__link">
+      <a href="../../rl_subsystem/user_guide/" class="md-nav__link">
         User Guide
       </a>
     </li>
@@ -587,11 +535,54 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../feature_request/todo/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Feature Request
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Feature Request
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#game-subsystem" class="md-nav__link">
+    Game Subsystem
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reporting-subsystem" class="md-nav__link">
+    Reporting Subsystem
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -620,22 +611,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview-of-the-rl-subsystem" class="md-nav__link">
-    Overview of the RL Subsystem
+  <a href="#game-subsystem" class="md-nav__link">
+    Game Subsystem
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ml-agents-python-package" class="md-nav__link">
-    ML-Agents Python Package
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#training-manager" class="md-nav__link">
-    Training Manager
+  <a href="#reporting-subsystem" class="md-nav__link">
+    Reporting Subsystem
   </a>
   
 </li>
@@ -653,17 +637,33 @@
               
                 
                 
-                  <h1>Description</h1>
+                  <h1>Feature Request</h1>
                 
-                <p>The main goal of the RL subsystem is to allow users to use reinforcement learning (RL) algorithms to train agents to learn to play the game.</p>
-<p>While the RL Subsystem can be used completely independently of other subsystems, the recommended use of this subsystem is to be used in conjunction with the rest of the subsystems.</p>
-<h2 id="overview-of-the-rl-subsystem">Overview of the RL Subsystem</h2>
-<p><img alt="screenshot" src="../images/rl_subsystem.png" style="max-width: 25em;" /></p>
-<p>The RL Subsystem is made of two components: the <a href="#training-manager">Training Manager</a>, and <a href="https://pypi.org/project/mlagents/" target="_blank">Unity's ML-Agents Python package</a>, which is part of the <a href="https://github.com/Unity-Technologies/ml-agents" target="_blank">ML-Agents Toolkit</a>.</p>
-<h2 id="ml-agents-python-package">ML-Agents Python Package</h2>
-<p>Built by <a href="https://unity.com/" target="_blank">Unity</a>, the ML-Agents Python package contains implementations of several commonly used RL algorithms, and allows agents of these algorithms to interact with the game. For more information, please refer to the <a href="https://github.com/Unity-Technologies/ml-agents/tree/main/docs" target="_blank">official documentation of ML-Agents</a>.</p>
-<h2 id="training-manager">Training Manager</h2>
-<p>Since one of the main goals of this project is to ensure that game developers/designers can use the tool without requiring extensive knowledge in RL, the training manager is meant to further simplify the process of using the underlying ML-Agents Python package. This includes the main feature of <a href="../hyperparameter_tuning/">hyperparameter tuning</a>, which allows users to use the RL algorithms without the need to manually select the hyperparameters.</p>
+                <h2 id="game-subsystem">Game Subsystem</h2>
+<ul>
+<li>If memory becomes a problem due to size of <code>.dat</code> file, adjust logging frequency </li>
+</ul>
+<h2 id="reporting-subsystem">Reporting Subsystem</h2>
+<ul>
+<li>
+<p>Embed TensorBoard as an IFrame (<a href="https://wandb.ai/costa-huang/sb3-sweep/runs/9ewi83xt/tensorboard">example</a>) within the reporting subsystem so that users do not need to go to a different website</p>
+</li>
+<li>
+<p>Range slider: the idea is to allow users to select the timeframe window of which they would like the heatmap to be plotted over <br>
+Example: <br>
+<img alt="screenshot" src="../images/exp_sliding_window.png" style="max-width: 25em;" /><br>
+<a href="https://plotly.com/python/range-slider/">Screenshot from Plotly</a></p>
+</li>
+<li>
+<p>Related to the range slider, but a more conventional slider that allows users to view captured videos/screenshots on a timeline <br>
+Example: <br>
+<img alt="screenshot" src="../images/exp_video_slider.png" style="max-width: 25em;" /><br>
+<a href="https://wandb.ai/cleanrl/cleanrl.benchmark/reports/Atari--VmlldzoxMTExNTI">Screenshot from Weights &amp; Biases</a></p>
+</li>
+<li>
+<p>For the data storage file format, consider creating an <a href="https://matroska-org.github.io/libebml/" target="_blank">EBML</a> based format, which combines the space-efficiency of pure binary formats and the flexbility/forwards+backwards compatibility of json. The main drawbacks is that it is not easily humanly readable and may be more complex to read and write. Notable existing formats based on EBML are WEBM and MKV.</p>
+</li>
+</ul>
                 
               
               
@@ -683,7 +683,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../../game_plugin_subsystem/video_recording/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Video Recording Components" rel="prev">
+        <a href="../../python_gui/user_guide/" class="md-footer__link md-footer__link--prev" aria-label="Previous: User Guide" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -692,26 +692,11 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Video Recording Components
+              User Guide
             </div>
           </div>
         </a>
       
-      
-        
-        <a href="../hyperparameter_tuning/" class="md-footer__link md-footer__link--next" aria-label="Next: Hyperparameter Tuning" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Hyperparameter Tuning
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
       
     </nav>
   
