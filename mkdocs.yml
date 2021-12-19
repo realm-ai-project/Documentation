@@ -24,11 +24,11 @@ nav:
   - Introduction: index.md
   - Installation: installation.md
   - Game Plugin Subsystem:
-    - Overview: gameplugin_subsystem/overview.md
-    - Prefab Breakdown: gameplugin_subsystem/prefab_breakdown.md
-    - ML-Agent Components: gameplugin_subsystem/mlagent_components.md
-    - Data Collection Components: gameplugin_subsystem/data_collection.md
-    - Video Recording Components: gameplugin_subsystem/video_recording.md
+    - Overview: game_plugin_subsystem/overview.md
+    - Prefab Breakdown: game_plugin_subsystem/prefab_breakdown.md
+    - ML-Agent Components: game_plugin_subsystem/mlagent_components.md
+    - Data Collection Components: game_plugin_subsystem/data_collection.md
+    - Video Recording Components: game_plugin_subsystem/video_recording.md
   - RL Subsystem: 
     - Description: rl_subsystem/description.md
     - Hyperparameter Tuning: rl_subsystem/hyperparameter_tuning.md
@@ -38,4 +38,7 @@ nav:
     - Heatmaps: analysis_subsystem/heatmaps.md
   - Reporting Subsystem:
     - Description: reporting_subsystem/description.md
+  - Python GUI:
+    - Description: python_gui/description.md
+    - User Guide: python_gui/user_guide.md
   - Feature Request: feature_request/todo.md

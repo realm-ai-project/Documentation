@@ -4,4 +4,4 @@ The "Realm AI Module" is a Unity prefab included with our package. The user shou
 
 The following diagram is a breakdown of the different components on the prefab, as well as the setup that the user has to perform.
 
-![screenshot](./gp_breakdown.png)
+![breakdown](./gp_breakdown.png)
