@@ -1,24 +1,31 @@
 site_name: REALM_AI 
 theme:
   name: material
+  logo: assets/logo.png
+  favicon: assets/logo.png
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: cyan
-      accent: light blue
+      primary: deep purple
+      accent: purple
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: cyan
-      accent: light blue
+      primary: white
+      accent: purple
       toggle:
         icon: material/weather-night
         name: Switch to light mode
 
 markdown_extensions: 
   - attr_list 
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/realm-ai-project
 
 nav:
   - Introduction: index.md
@@ -33,9 +40,9 @@ nav:
     - Description: rl_subsystem/description.md
     - Hyperparameter Tuning: rl_subsystem/hyperparameter_tuning.md
     - User Guide: rl_subsystem/user_guide.md
-  - Analysis Subsystem:
-    - Description: analysis_subsystem/description.md
-    - Heatmaps: analysis_subsystem/heatmaps.md
+  # - Analysis Subsystem:
+  #   - Description: analysis_subsystem/description.md
+  #   - Heatmaps: analysis_subsystem/heatmaps.md
   - Reporting Subsystem:
     - Description: reporting_subsystem/description.md
   - Python GUI:
