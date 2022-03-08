@@ -10,15 +10,15 @@
       
       
       <link rel="icon" href="../../assets/logo.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.8">
     
     
       
-        <title>Data Collection Components - REALM_AI</title>
+        <title>Setting up the Python Environment - REALM_AI</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.802231af.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.92558b1b.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#coming-soon" class="md-skip">
+        <a href="#setting-up-the-python-environment" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Data Collection Components
+              Setting up the Python Environment
             
           </span>
         </div>
@@ -262,22 +262,33 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../prefab_breakdown/" class="md-nav__link">
-        Prefab Breakdown
-      </a>
-    </li>
   
-
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
+      
+      <label class="md-nav__link" for="__nav_3_2">
+        Installation
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Installation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Installation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
             
   
   
   
     <li class="md-nav__item">
-      <a href="../mlagent_components/" class="md-nav__link">
-        ML-Agent Components
+      <a href="../installation_unity/" class="md-nav__link">
+        Installing the Unity Package
       </a>
     </li>
   
@@ -297,9 +308,39 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Setting up the Python Environment
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
-        Data Collection Components
+        Setting up the Python Environment
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-the-python-environment_1" class="md-nav__link">
+    Setting up the Python Environment
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -310,8 +351,74 @@
   
   
     <li class="md-nav__item">
-      <a href="../video_recording/" class="md-nav__link">
-        Video Recording Components
+      <a href="../installation_player/" class="md-nav__link">
+        Project Requirements, Setting up the Player Prefab
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation_configuration/" class="md-nav__link">
+        Configuring the Realm AI Module
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prefab_breakdown/" class="md-nav__link">
+        Prefab Breakdown
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../runtime_scripts/" class="md-nav__link">
+        Runtime Scripts Breakdown
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../editor_scripts/" class="md-nav__link">
+        Editor Scripts Breakdown
       </a>
     </li>
   
@@ -519,6 +626,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-the-python-environment_1" class="md-nav__link">
+    Setting up the Python Environment
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -530,8 +652,13 @@
               
                 
                 
-                <h1 id="coming-soon">coming soon...</h1>
-<p>docs about data collection scripts</p>
+                <h1 id="setting-up-the-python-environment">Setting up the Python Environment</h1>
+<p>The Unity Package requires the system to have Python 3 installed (this package is tested with version 3.7, but other versions may work), and to have the Python packages <code>realm-tune</code>, <code>realm-gui</code>, and <code>realm-report</code> installed.</p>
+<p>You can verify that these are installed by opening a command line and entering the commands <code>realm-tune</code>, <code>realm-gui</code>, or <code>realm-report</code>. They should all run and do something if installed correctly.</p>
+<h2 id="setting-up-the-python-environment_1">Setting up the Python Environment</h2>
+<p>It is often recommended to use virtual or isolated environments when using Python. This documentation will not explain why or how to do this, but if you have installed the Python dependencies into a specific environment, Realm AI needs to be able to activate the environment to use these dependencies. To set this up, open the Configuration Window in Unity (found under Realm AI/Open Configuration Window) and near the bottom, enter the command(s) to activate the environment in the "Environment Setup Command" field. An example of the setup for a Conda environment named "ml", on Windows, is shown below:</p>
+<p><img alt="env setup" src="../env_setup.png" /></p>
+<p>If you use Python without any environments, just leave this field blank.</p>
                 
               
               
@@ -551,7 +678,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../mlagent_components/" class="md-footer__link md-footer__link--prev" aria-label="Previous: ML-Agent Components" rel="prev">
+        <a href="../installation_unity/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Installing the Unity Package" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -560,20 +687,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              ML-Agent Components
+              Installing the Unity Package
             </div>
           </div>
         </a>
       
       
         
-        <a href="../video_recording/" class="md-footer__link md-footer__link--next" aria-label="Next: Video Recording Components" rel="next">
+        <a href="../installation_player/" class="md-footer__link md-footer__link--next" aria-label="Next: Project Requirements, Setting up the Player Prefab" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Video Recording Components
+              Project Requirements, Setting up the Player Prefab
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -615,10 +742,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.94ec81fe.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.756773cc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.48dfec6c.min.js"></script>
       
     
   </body>

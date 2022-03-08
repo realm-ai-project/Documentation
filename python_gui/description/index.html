@@ -10,7 +10,7 @@
       
       
       <link rel="icon" href="../../assets/logo.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.8">
     
     
       
@@ -18,7 +18,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.802231af.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.92558b1b.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -261,6 +261,93 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      <label class="md-nav__link" for="__nav_3_2">
+        Installation
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Installation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Installation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game_plugin_subsystem/installation_unity/" class="md-nav__link">
+        Installing the Unity Package
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game_plugin_subsystem/installation_python/" class="md-nav__link">
+        Setting up the Python Environment
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game_plugin_subsystem/installation_player/" class="md-nav__link">
+        Project Requirements, Setting up the Player Prefab
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game_plugin_subsystem/installation_configuration/" class="md-nav__link">
+        Configuring the Realm AI Module
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game_plugin_subsystem/installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../game_plugin_subsystem/prefab_breakdown/" class="md-nav__link">
         Prefab Breakdown
@@ -274,8 +361,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../game_plugin_subsystem/mlagent_components/" class="md-nav__link">
-        ML-Agent Components
+      <a href="../../game_plugin_subsystem/runtime_scripts/" class="md-nav__link">
+        Runtime Scripts Breakdown
       </a>
     </li>
   
@@ -286,20 +373,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../game_plugin_subsystem/data_collection/" class="md-nav__link">
-        Data Collection Components
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../game_plugin_subsystem/video_recording/" class="md-nav__link">
-        Video Recording Components
+      <a href="../../game_plugin_subsystem/editor_scripts/" class="md-nav__link">
+        Editor Scripts Breakdown
       </a>
     </li>
   
@@ -480,14 +555,21 @@
       
         <li class="md-nav__item">
   <a href="#basic-ml-agents-training" class="md-nav__link">
-    Basic Ml-Agents Training
+    Basic ML-Agents Training
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#hyperparameter-tuning-and-effective-ml-agents-training" class="md-nav__link">
-    Hyperparameter Tuning and Effective Ml-Agents Training
+    Hyperparameter Tuning and Effective ML-Agents Training
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard" class="md-nav__link">
+    Dashboard
   </a>
   
 </li>
@@ -558,14 +640,21 @@
       
         <li class="md-nav__item">
   <a href="#basic-ml-agents-training" class="md-nav__link">
-    Basic Ml-Agents Training
+    Basic ML-Agents Training
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#hyperparameter-tuning-and-effective-ml-agents-training" class="md-nav__link">
-    Hyperparameter Tuning and Effective Ml-Agents Training
+    Hyperparameter Tuning and Effective ML-Agents Training
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard" class="md-nav__link">
+    Dashboard
   </a>
   
 </li>
@@ -585,32 +674,36 @@
                 
                   <h1>Description</h1>
                 
-                <p>The Python GUI acts as a bridge to connect the Game Plugin Subsystem with the RL Subsystem. It provides an interface for the user to accomplish 2 tasks:</p>
-<ul>
-<li>Start barebones Ml-Agents Training</li>
-<li>Start Hyperparameter Tuning and use the new tuned values to start Ml-Agents Training</li>
-</ul>
+                <p>The Python GUI acts as a bridge to connect the Game Plugin Subsystem with the RL Subsystem. It provides an interface for the user to accomplish 3 tasks:</p>
+<ol>
+<li>Start barebones ML-Agents Training</li>
+<li>Start Hyperparameter Tuning and use the new tuned values to start ML-Agents Training</li>
+<li>Open the results dashboard</li>
+</ol>
 <p><img alt="screenshot" src="../images/home_screen.png" /></p>
-<h2 id="basic-ml-agents-training">Basic Ml-Agents Training</h2>
+<h2 id="basic-ml-agents-training">Basic ML-Agents Training</h2>
 <p><img alt="screenshot" src="../images/ml_agents.png" />
-The first use case of the Python GUI is to start basic Ml-Agents Training. Users will have the option to configure different settings to suit their training requirements. There are 3 buttons at the bottom that can be clicked. They can:</p>
+The first use case of the Python GUI is to start basic ML-Agents Training. Users will have the option to configure different settings to suit their training requirements. There are 3 buttons at the bottom that can be clicked. They can:</p>
 <ul>
 <li>Restore Default Values</li>
-<li>Save the Ml-Agents Configuration file</li>
-<li>Start Ml-Agents training and select which configuration file they would like to use</li>
+<li>Save the ML-Agents Configuration file</li>
+<li>Start and Resume ML-Agents training</li>
 </ul>
 <p>Please refer to the user guide for a step by step workflow.</p>
-<h2 id="hyperparameter-tuning-and-effective-ml-agents-training">Hyperparameter Tuning and Effective Ml-Agents Training</h2>
+<h2 id="hyperparameter-tuning-and-effective-ml-agents-training">Hyperparameter Tuning and Effective ML-Agents Training</h2>
 <p><img alt="screenshot" src="../images/hyperparameter_tuning.png" />
-The second use case of the Python GUI is to start hyperparameter tuning and then Ml-Agents training. The result of the hyperparameter tuning is an optimized Ml-Agents configuration file. Once the hyperparameter tuning is done, Ml-Agents training is automatically ran with the optimized configuration file. </p>
-<p>There is a difference between the two options. Simply put, the first option is to just train. The basic Ml-Agents training runs the configuration file supplied by the user. The second option is to find the best parameters for training (this process is known as tuning) and then train. The Hyperparameter Tuning and Effective Ml-Agents Training will find the optimized values for Ml-Agents training to produce the best results. Note that this option will take significantly longer. </p>
+The second use case of the Python GUI is to start hyperparameter tuning and then ML-Agents training. The result of the hyperparameter tuning is an optimized ML-Agents configuration file. Once the hyperparameter tuning is done, ML-Agents training is automatically ran with the optimized configuration file. </p>
+<p>There is a difference between the two options. Simply put, the first option is to just train. The basic ML-Agents training runs the configuration file supplied by the user. The second option is to find the best parameters for training (this process is known as tuning) and then train. The Hyperparameter Tuning and Effective ML-Agents Training will find the optimized values for ML-Agents training to produce the best results. Note that this option will take significantly longer. </p>
 <p>There are 3 buttons at the bottom that can be clicked. They can:</p>
 <ul>
 <li>Restore Default Values</li>
 <li>Save the Hyperparameter Configuration file</li>
-<li>Start Hyperparameter Tuning and Training</li>
+<li>Start and Resume Hyperparameter Tuning and Training</li>
 </ul>
 <p>Please refer to the user guide for a step by step workflow.</p>
+<h2 id="dashboard">Dashboard</h2>
+<p><img alt="screenshot" src="../images/dashboard.png" />
+The third use case of the Python GUI is to start the dashboard backend to start viewing the results of the training.</p>
                 
               
               
@@ -694,10 +787,10 @@ The second use case of the Python GUI is to start hyperparameter tuning and then
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.94ec81fe.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.756773cc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.48dfec6c.min.js"></script>
       
     
   </body>

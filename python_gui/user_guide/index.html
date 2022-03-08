@@ -10,7 +10,7 @@
       
       
       <link rel="icon" href="../../assets/logo.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.8">
     
     
       
@@ -18,7 +18,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.802231af.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.92558b1b.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -261,6 +261,93 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      <label class="md-nav__link" for="__nav_3_2">
+        Installation
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Installation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Installation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game_plugin_subsystem/installation_unity/" class="md-nav__link">
+        Installing the Unity Package
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game_plugin_subsystem/installation_python/" class="md-nav__link">
+        Setting up the Python Environment
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game_plugin_subsystem/installation_player/" class="md-nav__link">
+        Project Requirements, Setting up the Player Prefab
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game_plugin_subsystem/installation_configuration/" class="md-nav__link">
+        Configuring the Realm AI Module
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game_plugin_subsystem/installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../game_plugin_subsystem/prefab_breakdown/" class="md-nav__link">
         Prefab Breakdown
@@ -274,8 +361,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../game_plugin_subsystem/mlagent_components/" class="md-nav__link">
-        ML-Agent Components
+      <a href="../../game_plugin_subsystem/runtime_scripts/" class="md-nav__link">
+        Runtime Scripts Breakdown
       </a>
     </li>
   
@@ -286,20 +373,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../game_plugin_subsystem/data_collection/" class="md-nav__link">
-        Data Collection Components
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../game_plugin_subsystem/video_recording/" class="md-nav__link">
-        Video Recording Components
+      <a href="../../game_plugin_subsystem/editor_scripts/" class="md-nav__link">
+        Editor Scripts Breakdown
       </a>
     </li>
   
@@ -499,14 +574,21 @@
       
         <li class="md-nav__item">
   <a href="#ml-agents-training-workflow" class="md-nav__link">
-    Ml-Agents Training Workflow
+    ML-Agents Training Workflow
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#hyperparameter-tuning-and-effective-ml-agents-training-workflow" class="md-nav__link">
-    Hyperparameter Tuning and Effective Ml-Agents Training Workflow
+    Hyperparameter Tuning and Effective ML-Agents Training Workflow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard-worflow" class="md-nav__link">
+    Dashboard worflow
   </a>
   
 </li>
@@ -572,14 +654,21 @@
       
         <li class="md-nav__item">
   <a href="#ml-agents-training-workflow" class="md-nav__link">
-    Ml-Agents Training Workflow
+    ML-Agents Training Workflow
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#hyperparameter-tuning-and-effective-ml-agents-training-workflow" class="md-nav__link">
-    Hyperparameter Tuning and Effective Ml-Agents Training Workflow
+    Hyperparameter Tuning and Effective ML-Agents Training Workflow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard-worflow" class="md-nav__link">
+    Dashboard worflow
   </a>
   
 </li>
@@ -602,24 +691,35 @@
                 <h2 id="generic-information">Generic Information</h2>
 <p>By hovering over the green question mark for each setting, the recommended typical values are displayed. These values come from <a href="https://github.com/Unity-Technologies/ml-agents/blob/main/docs/Training-Configuration-File.md" target="_blank">ML-Agents Toolkit</a>.
 <img alt="screenshot" src="../images/tool_tip.png" /></p>
-<h2 id="ml-agents-training-workflow">Ml-Agents Training Workflow</h2>
-<p>Step 1: Adjust the settings accordingly. If you are unsure about what each setting does, visit <a href="https://github.com/Unity-Technologies/ml-agents/blob/main/docs/Training-Configuration-File.md" target="_blank">ML-Agents Toolkit</a> OR keep the default settings.</p>
+<h2 id="ml-agents-training-workflow">ML-Agents Training Workflow</h2>
+<p>Step 1: Adjust the settings accordingly. Visit <a href="https://github.com/Unity-Technologies/ml-agents/blob/main/docs/Training-Configuration-File.md" target="_blank">ML-Agents Toolkit</a> for futher information.</p>
 <p><img alt="screenshot" src="../images/ml_agents.png" /></p>
-<p>Step 2: Change the configuration file name. If the name is not changed, the configuration file will be named <code>config.yaml</code>. Press the <code>Save Ml-Agents Configuration</code> button and this will create the configuration file. If you would like the settings to be reset, press the <code>Restore Defaults</code> button.</p>
-<p>Step 3: When you are ready to start Ml-Agents training, press the <code>Start Training</code> button. </p>
+<p>Step 2: Change the configuration file name. If the name is not changed, the configuration file will be named <code>config.yaml</code>. Press the <code>Save ML-Agents Configuration</code> button and this will create the configuration file. To reset the settings, press the <code>Restore Defaults</code> button.</p>
+<p>Step 3: To start ML-Agents training, press the <code>Start Training</code> button. </p>
+<p>Step 4: Select a configuration file.</p>
 <p><img alt="screenshot" src="../images/ml_agents_train.png" /></p>
-<p>Step 4: Select the configuration file you would like to train with.</p>
+<p>Step 5: Click the <code>Proceed</code> button and the training will start!</p>
 <p><img alt="screenshot" src="../images/ml_agents_train_dropdown.png" /></p>
-<p>Step 5: Click the <code>Proceed</code> button and your training should start!</p>
-<h2 id="hyperparameter-tuning-and-effective-ml-agents-training-workflow">Hyperparameter Tuning and Effective Ml-Agents Training Workflow</h2>
-<p>Step 1: Adjust the settings accordingly. If you are unsure about what each setting does, keep the default settings.</p>
+<p>Step 6: There is also an option to continue from a previous run. Select either <code>Initialize from previous run</code> OR <code>Continue previous run</code>.</p>
+<p><img alt="screenshot" src="../images/ml_agents_previous_run.png" /></p>
+<p>Step 7: The <code>Initialize from previous run</code> OR <code>Continue previous run</code> option require a <code>Previous Run Results Directory</code>. Navigate to the file system and paste the path in. Press <code>Proceed</code> and the training will resume.</p>
+<p><img alt="screenshot" src="../images/ml_agents_previous_run_directory.png" /></p>
+<h2 id="hyperparameter-tuning-and-effective-ml-agents-training-workflow">Hyperparameter Tuning and Effective ML-Agents Training Workflow</h2>
+<p>Step 1: Adjust the settings accordingly.</p>
 <p><img alt="screenshot" src="../images/hyperparameter_tuning.png" /></p>
-<p>Step 2: Change the configuration file name. If the name is not changed, the configuration file will be named <code>config.yaml</code>. Press the <code>Save Hyperparameter Configuration</code> button and this will create the configuration file. If you would like the settings to be reset, press the <code>Restore Defaults</code> button.</p>
-<p>Step 3: When you are ready to start Hyperparameter Tuning and Ml-Agents Training, press the <code>Start Hyperparameter Tuning and Training</code> button. </p>
+<p>Step 2: Change the configuration file name. If the name is not changed, the configuration file will be named <code>config.yaml</code>. Press the <code>Save Hyperparameter Configuration</code> button and this will create the configuration file. To reset the settings, press the <code>Restore Defaults</code> button.</p>
+<p>Step 3: To start Hyperparameter Tuning and ML-Agents Training, press the <code>Start Hyperparameter Tuning and Training</code> button. </p>
+<p>Step 4: Select a configuration file.</p>
 <p><img alt="screenshot" src="../images/hyperparameter_tuning_training.png" /></p>
-<p>Step 4: Select the configuration file you would like to tune and train with.</p>
-<p><img alt="screenshot" src="../images/hyperparameter_tuning_training_dropdown.png" /></p>
-<p>Step 5: Click the <code>Proceed</code> button and your tune &amp; training should start!</p>
+<p>Step 5: Click the <code>Proceed</code> button and tune &amp; training will start!</p>
+<p>Step 6: There is also an option to continue from a previous run. Select <code>Continue previous run</code>.</p>
+<p><img alt="screenshot" src="../images/hyperparameter_tuning_training_previous_run_directory.png" /></p>
+<p>Step 7: The <code>Continue previous run</code> option requires a <code>Previous Run Results Directory</code>. Navigate to the file system and paste the path in. Press <code>Proceed</code> and the tune &amp; training will resume.</p>
+<p><img alt="screenshot" src="../images/hyperparameter_tuning_training_previous_run.png" /></p>
+<h2 id="dashboard-worflow">Dashboard worflow</h2>
+<p><img alt="screenshot" src="../images/dashboard.png" />
+Step 1:
+Press the <code>Open Dashboard</code> button to start the local web app.</p>
                 
               
               
@@ -703,10 +803,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.94ec81fe.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.756773cc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.48dfec6c.min.js"></script>
       
     
   </body>

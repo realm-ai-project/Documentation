@@ -10,15 +10,15 @@
       
       
       <link rel="icon" href="../../assets/logo.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.8">
     
     
       
-        <title>ML-Agent Components - REALM_AI</title>
+        <title>Project Requirements, Setting up the Player Prefab - REALM_AI</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.802231af.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.92558b1b.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#coming-soon" class="md-skip">
+        <a href="#project-requirements-setting-up-the-player-prefab" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ML-Agent Components
+              Project Requirements, Setting up the Player Prefab
             
           </span>
         </div>
@@ -262,10 +262,45 @@
             
   
   
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
+      
+      <label class="md-nav__link" for="__nav_3_2">
+        Installation
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Installation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Installation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
   
     <li class="md-nav__item">
-      <a href="../prefab_breakdown/" class="md-nav__link">
-        Prefab Breakdown
+      <a href="../installation_unity/" class="md-nav__link">
+        Installing the Unity Package
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation_python/" class="md-nav__link">
+        Setting up the Python Environment
       </a>
     </li>
   
@@ -286,7 +321,7 @@
       
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        ML-Agent Components
+        Project Requirements, Setting up the Player Prefab
       </a>
       
     </li>
@@ -298,8 +333,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../data_collection/" class="md-nav__link">
-        Data Collection Components
+      <a href="../installation_configuration/" class="md-nav__link">
+        Configuring the Realm AI Module
       </a>
     </li>
   
@@ -310,8 +345,50 @@
   
   
     <li class="md-nav__item">
-      <a href="../video_recording/" class="md-nav__link">
-        Video Recording Components
+      <a href="../installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prefab_breakdown/" class="md-nav__link">
+        Prefab Breakdown
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../runtime_scripts/" class="md-nav__link">
+        Runtime Scripts Breakdown
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../editor_scripts/" class="md-nav__link">
+        Editor Scripts Breakdown
       </a>
     </li>
   
@@ -530,8 +607,18 @@
               
                 
                 
-                <h1 id="coming-soon">coming soon...</h1>
-<p>docs about <code>RealmAgent.cs</code>, <code>RealmSensorComponent.cs</code>, <code>RealmActuatorComponent.cs</code></p>
+                <h1 id="project-requirements-setting-up-the-player-prefab">Project Requirements, Setting up the Player Prefab</h1>
+<p>To setup RealmAI, it requires there to be a prefab representing the player in the game project.
+This prefab should:
+- represent the player, i.e. its position represents the player's position in the game world 
+- be present in the game Scene or be spawned in as soon as the application is run
+- have only one instance in the game environment throughout the game
+- ensure that its one instance is never deactivated, disabled, or destroyed throughout the game</p>
+<p>If your project does not have a player prefab that satisfy these requirements, please create one, or adjust your code so that the requirements are satisfied. If these requirements cannot be satisfied, your project may not be suitable for RealmAI 😢.</p>
+<p>Once you have a player prefab that satisfies the requirements above, let RealmAI know about this prefab by assigning the prefab to the "Player Prefab" field in the Configuration Window in Unity (found under Realm AI/Open Configuration Window), which should look like this:</p>
+<p><img alt="player prefab" src="../player_prefab.png" /></p>
+<p>To continue, open click "Open player prefab for edit" to open the player prefab in prefab edit mode. Once in prefab edit mode, click on "Add Realm AI Module" to add an instance of the "Realm AI Module" prefab (included with the RealmAI package) as a child of the player prefab. This Realm AI Module contains a series of scripts for RealmAI features, which also store all of the configuration needed for these features.</p>
+<p>Note: like with the player, there should only be one active instance of the Realm AI Module throughout the game. If you have prefab variants that derive from the player prefab, please disable the Realm AI Module in those prefabs variants.  </p>
                 
               
               
@@ -551,7 +638,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../prefab_breakdown/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Prefab Breakdown" rel="prev">
+        <a href="../installation_python/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Setting up the Python Environment" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -560,20 +647,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Prefab Breakdown
+              Setting up the Python Environment
             </div>
           </div>
         </a>
       
       
         
-        <a href="../data_collection/" class="md-footer__link md-footer__link--next" aria-label="Next: Data Collection Components" rel="next">
+        <a href="../installation_configuration/" class="md-footer__link md-footer__link--next" aria-label="Next: Configuring the Realm AI Module" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Data Collection Components
+              Configuring the Realm AI Module
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -615,10 +702,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.94ec81fe.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.756773cc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.48dfec6c.min.js"></script>
       
     
   </body>

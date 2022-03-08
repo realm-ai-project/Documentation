@@ -10,7 +10,7 @@
       
       
       <link rel="icon" href="../../assets/logo.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.8">
     
     
       
@@ -18,7 +18,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.802231af.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.92558b1b.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -261,47 +261,97 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Overview
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         Overview
       </a>
       
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+    </li>
+  
+
+          
+            
   
   
   
     
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <li class="md-nav__item md-nav__item--nested">
       
-        <li class="md-nav__item">
-  <a href="#installation-users-and-overview" class="md-nav__link">
-    Installation Users and Overview
-  </a>
-  
-</li>
       
-        <li class="md-nav__item">
-  <a href="#installation-for-development" class="md-nav__link">
-    Installation for Development
-  </a>
-  
-</li>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
       
-    </ul>
+      <label class="md-nav__link" for="__nav_3_2">
+        Installation
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Installation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Installation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
   
-</nav>
-      
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation_unity/" class="md-nav__link">
+        Installing the Unity Package
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation_python/" class="md-nav__link">
+        Setting up the Python Environment
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation_player/" class="md-nav__link">
+        Project Requirements, Setting up the Player Prefab
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation_configuration/" class="md-nav__link">
+        Configuring the Realm AI Module
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -323,8 +373,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../mlagent_components/" class="md-nav__link">
-        ML-Agent Components
+      <a href="../runtime_scripts/" class="md-nav__link">
+        Runtime Scripts Breakdown
       </a>
     </li>
   
@@ -335,20 +385,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../data_collection/" class="md-nav__link">
-        Data Collection Components
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../video_recording/" class="md-nav__link">
-        Video Recording Components
+      <a href="../editor_scripts/" class="md-nav__link">
+        Editor Scripts Breakdown
       </a>
     </li>
   
@@ -556,28 +594,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#installation-users-and-overview" class="md-nav__link">
-    Installation Users and Overview
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation-for-development" class="md-nav__link">
-    Installation for Development
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -591,12 +607,7 @@
                 
                 <h1 id="game-plugin-subsystem-overview">Game Plugin Subsystem Overview</h1>
 <p>The game plugin subsystem is a Unity package. For more information on Unity packages, see <a href="https://docs.unity3d.com/Manual/PackagesList.html" target="_blank">the Unity manual</a> or <a href="https://www.youtube.com/watch?v=mgsLb3TKljk" target="_blank">this tutorial</a> for how to create one.</p>
-<h2 id="installation-users-and-overview">Installation Users and Overview</h2>
-<p>The installation process for the users is detailed in the image below, which should also provide an overview of how the package is used.</p>
-<p>For step 4, the configuration required of the user is detailed in the Prefab Breakdown page.</p>
-<p><img alt="installation" src="../gp_installation.png" /></p>
-<h2 id="installation-for-development">Installation for Development</h2>
-<p>For development, instead of using the "Add package from git URL..." option, clone the repo separately and use the "Add package from disk..." option. In the dialog popup, select the <code>package.json</code> file from the cloned repo. This will install directly from the cloned repo. You can then directly modify the package from inside Unity and the changes will be made directly to the files in the cloned repo.</p>
+<p>This Game Plugin section of the documentation will assume that the reader is familiar with using Unity for game development. The first half of this section will guide the reader through installing and integrate the Unity package into their game project and the second half will explain key aspects of the code given in the package to help the reader understand and modify the code as needed.</p>
                 
               
               
@@ -632,13 +643,13 @@
       
       
         
-        <a href="../prefab_breakdown/" class="md-footer__link md-footer__link--next" aria-label="Next: Prefab Breakdown" rel="next">
+        <a href="../installation_unity/" class="md-footer__link md-footer__link--next" aria-label="Next: Installing the Unity Package" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Prefab Breakdown
+              Installing the Unity Package
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -680,10 +691,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.94ec81fe.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.756773cc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.48dfec6c.min.js"></script>
       
     
   </body>
