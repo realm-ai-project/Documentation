@@ -32,15 +32,12 @@ nav:
   - Installation: installation.md
   - Game Plugin Subsystem:
     - Overview: game_plugin_subsystem/overview.md
-    - Installation:
-      - Installing the Unity Package: game_plugin_subsystem/installation_unity.md
-      - Setting up the Python Environment: game_plugin_subsystem/installation_python.md
-      - Project Requirements, Setting up the Player Prefab: game_plugin_subsystem/installation_player.md
-      - Configuring the Realm AI Module: game_plugin_subsystem/installation_configuration.md
-      - Installation: game_plugin_subsystem/installation.md
-    - Prefab Breakdown: game_plugin_subsystem/prefab_breakdown.md
-    - Runtime Scripts Breakdown: game_plugin_subsystem/runtime_scripts.md
-    - Editor Scripts Breakdown: game_plugin_subsystem/editor_scripts.md
+    - Installing the Unity Package: game_plugin_subsystem/installation_unity.md
+    - Setting up the Python Environment: game_plugin_subsystem/installation_python.md
+    - Project Requirements, Setting up the Player Prefab: game_plugin_subsystem/installation_player.md
+    - Configuring the Realm AI Module: game_plugin_subsystem/installation_configuration.md
+    - Final Tips and Instructions: game_plugin_subsystem/installation_tips.md
+    - Known Issues: game_plugin_subsystem/known_issues.md
   - RL Subsystem: 
     - Description: rl_subsystem/description.md
     - Hyperparameter Tuning: rl_subsystem/hyperparameter_tuning.md
