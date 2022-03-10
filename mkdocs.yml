@@ -29,7 +29,7 @@ extra:
 
 nav:
   # - Introduction: index.md
-  - Quick Start Guide: installation.md
+  - Quick Start Guide: index.md
   - Game Plugin Subsystem:
     - Overview: game_plugin_subsystem/overview.md
     - Installing the Unity Package: game_plugin_subsystem/installation_unity.md
