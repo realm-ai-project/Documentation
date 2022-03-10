@@ -44,7 +44,10 @@ nav:
   - RL Subsystem: 
     - Description: rl_subsystem/description.md
     - Hyperparameter Tuning: rl_subsystem/hyperparameter_tuning.md
-    - User Guide: rl_subsystem/user_guide.md
+    - Quick Start Guide: rl_subsystem/getting_started.md
+    - Realm-Tune: 
+      - Configuration: rl_subsystem/user_guide/configuration.md
+      
   # - Analysis Subsystem:
   #   - Description: analysis_subsystem/description.md
   #   - Heatmaps: analysis_subsystem/heatmaps.md

@@ -8,6 +8,6 @@ Some common hyperparameters include batch size, learning rate, exploration-relat
 While it is possible to manually tune hyperparameters through trial and error, this process is mundane and very expensive given the usually long training times. This process is worsen by the need for domain knowledge in order to know which hyperparameter to tune, and the scale to tune them by.
 
 ## Common Hyperparameter Optimization Algorithms 
-There are a few dominant algorithms that are commonly used to automate the process of tuning the hyperparameters. This is namely Grid Search, Random/Uninformed Search, and Bayesian methods such as the Tree-structured Parzen Estimator (TPE) algorithm.
+There are a few dominant algorithms that are commonly used to automate the process of tuning the hyperparameters. This is namely Grid Search, Random/Uninformed Search, and Bayesian methods such as the Tree-structured Parzen Estimator (TPE) algorithm. Realm-tune currently supports all of them.
 
-REALM_AI's RL Subsystem currently supports the TPE algorithm. To get started on how to automatically tune hyperparameters with REALM_AI, head to the [user guide](user_guide.md).
+To get started on how to automatically tune hyperparameters with REALM_AI, head to the [user guide](user_guide.md).
