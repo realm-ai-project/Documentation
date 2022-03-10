@@ -2,4 +2,37 @@
 
 All of the configuration needed for RealmAI features are stored within the instance of Realm AI Module (which should be a child of the player prefab). There are a number of things to configure in the Realm AI Module before the RealmAI features will work. To help with this, all of the essential configuration and inspector fields that need to be filled will be shown (mirrored) in the Configuration Window itself, so you don't have to search through the Realm AI Module to find them.
 
-These inspectors fields need to be filled before the RealmAI features will work:
+These inspectors fields can be configured, the ones that are not optional must be filled before the RealmAI features will work:
+
+| Name | Location | Required | Description |
+| ---- | -------- | -------- | ----------- |
+| Initialize Function | Realm AI Module: Realm Agent | Yes | Provide a function here to intiailize the game environment. This will be called once at the start of the application (assuming this script is active) |
+| Reset Function | Realm AI Module: Realm Agent | Yes | Provide a function here to reset the game environment. This will be called once at the beginning of each episode (we will consider each run of the game to be one episode). |
+| Game Over Function | Realm AI Module: Realm Agent | Yes | Provide a function which will return a bool that is true when the game is over. This will be called every frame to see if the current episode has ended. |
+| Max Episode Length (Episode Timeout) | Realm AI Module: Realm Agent | Yes | If set to a positive number, the current episode will end after this many seconds. It is recommended to set this to a value large enough for the player to complete what you want them to do, but not too large that a clueless bot can get stuck somewhere for a long time without the game being restarted. Note that you can also include a time factor into the Game Over Function to end the game if the player has not done anything significant for a while.|
+| Position Function | Realm AI Module/Sensor: Realm Sensor Component | Yes | Provide a function that returns the current position of the player. This will be called frequently to record the players position, and to update the bot with the player's location |
+| Approximate Map Bounds | Realm AI Module/Sensor: Realm Sensor Component | No | Describe the approximate bounaries of the player. If you set this properly, it can help the bot learn faster. |
+| (Grid) Cell Size<sup>1</sup>| Realm AI Module/Grid Sensor 2D Component | No<sup>1</sup> | The size of each cell in the grid sensor |
+| (Grid) Cell Count<sup>1</sup>| Realm AI Module/Grid Sensor 2D Component | No<sup>1</sup> | The number of cells in the grid sensor along each axis |
+| Detectable Tags<sup>1</sup>| Realm AI Module/Grid Sensor 2D Component | No<sup>1</sup> | The tags of the objects that should be detectable by the grid sensor |
+| Collider Mask<sup>1</sup>| Realm AI Module/Grid Sensor 2D Component | No<sup>1</sup> | The layers to scan for the colliders of detectable objects. |
+| Show (Grid) Gizmos<sup>1</sup>| Realm AI Module/Grid Sensor 2D Component | No<sup>1</sup> | Visualize the grid and its detections with Gizmos. |
+| (Grid) Gizmos Colors<sup>1</sup>| Realm AI Module/Grid Sensor 2D Component | No<sup>1</sup> | Assign the color (one corresponding to each detectable tag) for detected objects to show up as in the grid Gizmos. |
+| Custom Sensors | Realm AI Module/Sensor: Realm Sensor Component | No | If there are any internal states not detected by the Grid Sensor, add them here so the bot will know about them, potentially improving its performance. For example, cooldowns, amount of health, and other variable stats can be useful for the bots decision making. If it helps, you can imagine the bot having absolutely no memory, and can only make decisions from its position, the grid sensor, and any additional observations you provide here. |
+| Show (Sensor) Gizmos<sup>1</sup>| Realm AI Module/Realm Sensor Component | No<sup>1</sup> | Display the values received by the custom sensors to verify they are working. Note that values will be converted to floats and integers will be normalized between their ranges. |
+| Position Record Interval | Realm AI Module/Sensor: Realm Sensor Component | No | This number is the interval for how often the position is recorded for the heatmap. Set this to X to record the player's position every X seconds. |
+| Actions | Realm AI Module/Actuator: Realm Actuator Component | Yes | Configure this to specify the actions that the player can take. The bot will use this to control the player. For each action, specify a Callback, which is a setter function the bot can use to set the value for the action. Optionally, specify a Heuristic, which is a getter function that returns current human's input value for the action. Essentially, when the bot isn't playing, the Heuristic function can be used to get human input, which we will in turn pass into the Callback function to control the player. |
+| Reward Function | Realm AI Module/Score: Realm Score | Yes<sup>2</sup> | Provide a function that the current score of the player. The bot will learn to maximize its score during training. |
+| Reward Regions | Realm AI Module/Score: Realm Score | No<sup>2</sup> | Define regions in the world where the player should be rewarded for reaching. Scores awared or deducted from the player entering or staying in these regions are added on top of the Reward Function |
+| Existential Penalty (Per Second) | Realm AI Module/Score: Realm Score | No<sup>2</sup>  | Add a score penalty to the bot for existing. This amount will be deducted from the bots score at a constant rate per second. Adding a small existential penalty to the bot can encourage it to complete each run of the game faster.|
+| Show (Reward) Gizmos | Realm AI Module/Score: Realm Score | No | Show the current score achieved by the bot using Gizmos.|
+| Video Resolution<sup>3</sup> | Realm AI Module/VideoRecording: Realm Recorder | No | The resolution of video replays.|
+| Video Per Million Steps<sup>3</sup> | Realm AI Module/VideoRecording: Realm Recorder | No | The amount of videos to record per 1 million steps of training. Feel free to experiment with different amounts of videos recorded to suit your needs. |
+
+<sup>1</sup> The Grid Sensor is the main method for the bot to perceive the environment. **Configuring this sensor is highly recommended, although it is optional if the other sensors provide enough information for the bot to play well**. It works by detecting objects in a grid around the player. Objects with a 2D collider are detected when their collider touches a cell, as long as their tag and layer are specified. Only one object is detectable per cell, and the order of priority of detection is specified by the order in with they appear in the Detectable Tags array (the first elements in the array has priority over later elements).
+
+<sup>2</sup> Providing a reward function is technically not necessary, as long as there is some form of reward for the bot the learn from. At least one of these reward methods should be set, but a custom reward function (which can simply be an existing score function you already have) is the most common way to do it.
+
+<sup>3</sup> As an optional feature, video replays can be recorded. They are intended to be recorded periodically during training, to allow you to see the bot play and to reveal any interesting behavior not visible from the heatmaps. To enable video replays, provide a path to a FFmpeg executable on your machine in the `FFmpeg Path` setting in the Realm AI Configuration Window. Note that video recording will not work if you are running a build in no-graphics mode.
+
+

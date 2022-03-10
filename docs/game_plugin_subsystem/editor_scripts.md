@@ -1,3 +1,0 @@
-# Editor  Scripts Breakdown
-
-coming soon...
