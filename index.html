@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-realm_ais-documentation" class="md-skip">
+        <a href="#quick-start-guide" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome to REALM_AI's documentation!
+              Quick Start Guide
             
           </span>
         </div>
@@ -197,11 +197,99 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="installation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Quick Start Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
         Quick Start Guide
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#brief-overview-of-installation" class="md-nav__link">
+    Brief Overview of Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-steps" class="md-nav__link">
+    Installation Steps
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-ml-agents" class="md-nav__link">
+    Installing ML-Agents
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unity-game-plugin" class="md-nav__link">
+    Unity Game Plugin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rl-subsystem-realm-tune" class="md-nav__link">
+    RL Subsystem (realm-tune)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-gui-realm-gui" class="md-nav__link">
+    Python GUI (realm-gui)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#report-subsystem-realm-report" class="md-nav__link">
+    Report Subsystem (realm-report)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -555,6 +643,69 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#brief-overview-of-installation" class="md-nav__link">
+    Brief Overview of Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-steps" class="md-nav__link">
+    Installation Steps
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-ml-agents" class="md-nav__link">
+    Installing ML-Agents
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unity-game-plugin" class="md-nav__link">
+    Unity Game Plugin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rl-subsystem-realm-tune" class="md-nav__link">
+    RL Subsystem (realm-tune)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-gui-realm-gui" class="md-nav__link">
+    Python GUI (realm-gui)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#report-subsystem-realm-report" class="md-nav__link">
+    Report Subsystem (realm-report)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -566,7 +717,41 @@
               
                 
                 
-                <h1 id="welcome-to-realm_ais-documentation">Welcome to REALM_AI's documentation!</h1>
+                <h1 id="quick-start-guide">Quick Start Guide</h1>
+<h2 id="brief-overview-of-installation">Brief Overview of Installation</h2>
+<p>To have the entire pipeline working, there are 5 main components to install:</p>
+<ul>
+<li>Unity Game Plugin</li>
+<li>RL Subsystem (<code>realm-tune</code>)</li>
+<li>Python GUI (<code>realm-gui</code>)</li>
+<li>Report Subsystem (<code>realm-report</code>)</li>
+</ul>
+<p>The installation process for each of them are very straightforward, and are to be individually installed to facilitate flexibility to a user's needs.</p>
+<p>For a more formal description of each of these subsystems, please refer them to their individual sections in this documentation.</p>
+<h2 id="installation-steps">Installation Steps</h2>
+<h3 id="installing-ml-agents">Installing ML-Agents</h3>
+<p>The REALM-AI tools are tightly integrated with Unity ML-Agents. As a result, it would be advisable to have Unity ML-Agents installed first, to ensure that installation of the following REALM-AI packages go as smoothly as possible.</p>
+<p>To install Unity ML-Agents, please refer to their excellent <a href="https://github.com/Unity-Technologies/ml-agents/blob/main/docs/Installation.md#installation" target="_blank">installation guide</a>.</p>
+<h3 id="unity-game-plugin">Unity Game Plugin</h3>
+<p>Since the installation process for the Unity Game Plugin is slightly more involved, we refer users to the installation guide provided as part of its documentation, <a href="/game_plugin_subsystem/installation_unity">here</a>.</p>
+<h3 id="rl-subsystem-realm-tune">RL Subsystem (<code>realm-tune</code>)</h3>
+<p>To install the various tools bundled with the RL Subsystem, perform the following steps in a terminal:</p>
+<pre><code>git clone https://github.com/realm-ai-project/RL-Subsystem.git
+cd RL-Subsystem
+pip install -e .
+</code></pre>
+<h3 id="python-gui-realm-gui">Python GUI (<code>realm-gui</code>)</h3>
+<p>To install the Python GUI, which is a custom-built UI that is tightly knitted with the Unity Game Plugin, perform the following steps in a terminal:</p>
+<pre><code>git clone https://github.com/realm-ai-project/Python-GUI.git
+cd Python-GUI
+pip install -e .
+</code></pre>
+<h3 id="report-subsystem-realm-report">Report Subsystem (<code>realm-report</code>)</h3>
+<p>The Report Subsystem is composed of a React frontend, and a Flask backend. These two components work closely with each other in order to generate and display heatmaps to the user. To install the <code>realm-report</code> tool, perform the following steps:</p>
+<pre><code>git clone https://github.com/realm-ai-project/Reporting-Subsystem.git
+cd Reporting-Subsystem/api
+pip install -e .
+</code></pre>
                 
               
               
@@ -582,6 +767,26 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+      
+        
+        <a href="game_plugin_subsystem/overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Overview
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
