@@ -40,11 +40,13 @@ nav:
     - Known Issues: game_plugin_subsystem/known_issues.md
   - RL Subsystem: 
     - Description: rl_subsystem/description.md
-    - Hyperparameter Tuning: rl_subsystem/hyperparameter_tuning.md
     - Quick Start Guide: rl_subsystem/getting_started.md
     - Realm-Tune: 
-      - Configuration: rl_subsystem/user_guide/configuration.md
-      
+      - Hyperparameter Tuning: rl_subsystem/realm-tune/hyperparameter_tuning.md
+      - Configuration: rl_subsystem/realm-tune/configuration.md
+      - Features and Limitations: rl_subsystem/realm-tune/features_and_limits.md
+    - Wandb-Mlagents-Learn:
+      - Usage Guide: rl_subsystem/wandb-mlagents-learn/usage-guide.md
   # - Analysis Subsystem:
   #   - Description: analysis_subsystem/description.md
   #   - Heatmaps: analysis_subsystem/heatmaps.md

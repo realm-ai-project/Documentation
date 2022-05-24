@@ -9,5 +9,3 @@ While it is possible to manually tune hyperparameters through trial and error, t
 
 ## Common Hyperparameter Optimization Algorithms 
 There are a few dominant algorithms that are commonly used to automate the process of tuning the hyperparameters. This is namely Grid Search, Random/Uninformed Search, and Bayesian methods such as the Tree-structured Parzen Estimator (TPE) algorithm. Realm-tune currently supports all of them.
-
-To get started on how to automatically tune hyperparameters with REALM_AI, head to the [user guide](user_guide.md).

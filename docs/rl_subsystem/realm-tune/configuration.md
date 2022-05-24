@@ -53,9 +53,9 @@ mlagents: # Fully compatible with all single-agent mlagents config. Must use def
 ```
 
 ## Cli arguments
-The purpose of having cli arguments in conjunction of the configuration file is mainly for convenience, especially when `realm-tune` is interacted with programatically from other tools. For instance, it can be a hassle to parse the config file, save the config file, and then point `realm-tune` to it. 
+The purpose of having cli arguments in conjunction of the configuration file is mainly for convenience, especially when `realm-tune` is used programmatically (i.e., `realm-tune` is called by another program). In such cases, it can be a hassle to parse the config file, edit the values, save the config file, and then point `realm-tune` to it. 
 
-One important thing to note is that arguments passed through the cli args **always takes precedence** over those through the config files. In other words, arguments passed through the cli always overrides those in the config file. This allows a user to say, have a fixed config file that they are comfortable with, and override them through the cli everytime they have a different game etc.
+One important thing to note is that arguments passed through the cli args **always takes precedence** over those through the config files. In other words, arguments passed through the cli always overrides those in the config file. This enables a cool use case, which is to allow a user to have a fixed config file that they are comfortable with, and override them through the cli everytime they have a different game etc.
 
 To get the list of available cli arguments, do `realm-tune --help`, the output of which should look something like:
 ```
